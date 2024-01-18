@@ -1,6 +1,12 @@
-# Implementation of Differential inference for scRNA-seq data
+# Differential inference for scRNA-seq data implementation
 
-## Compilation
+## Overview
+
+We propose an interpretable hierarchical Bayesian model **DIFseq** that is able to simultaneously correct batch effects, perform cell type clustering, impute dropout events, and estimate batch effects, cell type effects and cell-type-specific treatment effects. Via joint modeling, DIFseq accounts for all the uncertainties in the analysis and enables rigorous hypothesis testing. By borrowing ideas from deep learning, we implement a Monte Carlo Expectation-Maximization algorithm with stochastic updates so that the algorithm is scalable to hundreds of thousands of cells.
+
+This repository introduces how to reproduce the results in our manuscript. First, we should compile the source code of DIFseq and then reproduce the figures and tables for three simulation settings and two real datasets as the following instructions.  
+
+## Compilation of the source code
 
 The algorithm relies on GNU scietific library. To compile the source code on your computer, please modify the directory of GSL in the *Makefile* file. Then, you can compile the C++ source code by
 
