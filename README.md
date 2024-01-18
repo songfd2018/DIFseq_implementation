@@ -2,7 +2,9 @@
 
 ## Overview
 
-We propose an interpretable hierarchical Bayesian model **DIFseq** that is able to simultaneously correct batch effects, perform cell type clustering, impute dropout events, and estimate batch effects, cell type effects and cell-type-specific treatment effects. Via joint modeling, DIFseq accounts for all the uncertainties in the analysis and enables rigorous hypothesis testing. By borrowing ideas from deep learning, we implement a Monte Carlo Expectation-Maximization algorithm with stochastic updates so that the algorithm is scalable to hundreds of thousands of cells.
+As comparisons between biological conditions or treatments are one of the most important methodologies for scientific discoveries, single-cell RNA-sequencing (scRNA-seq) experiments with cells collected from multiple conditions have become prevalent nowadays. However, rigorous statistical methods for comparing scRNA-seq data collected from multiple conditions are lacking. 
+
+Therefore, we propose an interpretable hierarchical Bayesian model **DIFseq** that is able to simultaneously correct batch effects, perform cell type clustering, impute dropout events, and estimate batch effects, cell type effects and cell-type-specific treatment effects. Via joint modeling, DIFseq accounts for all the uncertainties in the analysis and enables rigorous hypothesis testing. By borrowing ideas from deep learning, we implement a Monte Carlo Expectation-Maximization algorithm with stochastic updates so that the algorithm is scalable to hundreds of thousands of cells.
 
 This repository introduces how to reproduce the results in our manuscript. First, we should compile the source code of DIFseq and then reproduce the figures and tables for three simulation settings and two real datasets as the following instructions.  
 
