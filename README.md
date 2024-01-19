@@ -69,7 +69,7 @@ We also benchmark the **differential analysis (DA) analysis** of DIFseq with the
 
 *Note:* Before conducting DA analysis on settings 2 and 3, you need to run `Batch_effects_correction.R` to remove batch effects and generate the corrected PCs by Seurat or MNN. In comparison, settting 1 is free of batch effects. You can conduct DA analysis directly. 
 
-Moreover, we evaluate the identified cell-type-specific differentially expressed (DE) genes by DIFseq, Seurat and Milo, respectively and compare the area under the ROC curves (AUC) across three methods. The R code of these three methods also involves the **differential expression** steps.
+To evaluate the **differential expression (DE)** analysis，we compare the ROC of identified cell-type-specific DE genes by DIFseq, Seurat and Milo, respectively. We also compare the area under the ROC curves (AUC) across three methods. The code of these three methods also involves the **differential expression** steps.
 
 Finally, `Method_comparison.R` covers
 
@@ -104,8 +104,8 @@ After placing the `RawCountData` folder into the `Covid` folder, please run `run
 To analyze the covid-19 data by DIFseq, you can run `DIFseq_analysis.R` to
 
    - Draw the scatter plot of BICs for different cell type numbers to select the optimal number of cell types;
-   - Annotate the identified cell types by their average anti-body (ADT) levels and draw the heatmap of the scaled ADT levels
-   - Draw the bar plot of the estimated cell type proportions 
+   - Annotate the identified cell types by their average anti-body (ADT) levels and draw the heatmap of the scaled ADT levels;
+   - Draw the bar plot of the estimated cell type proportions;
    - Conduct differential expression analysis and draw the condition effects of cell-type-specific DE genes as well as the bar plot of DE gene numbers for two conditions;
    - Generate the corrected read count data and draw the dot plot for the corrected expression levels of immune-related genes;
    - Conduct differential abundance analysis between any pair of three conditions.
