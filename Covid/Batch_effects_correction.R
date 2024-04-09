@@ -1,5 +1,5 @@
 library(batchelor)
-library(scater) # runPCA function
+library(scater)
 
 rm(list=ls())
 proj <- "covid"

@@ -1,5 +1,8 @@
+#######################################
+# Analyze pancreas datasets by DIFseq #
+#######################################
 rm(list=ls())
-# Analyze pancreas datasets by DIFseq
+
 library(mclust)
 library(ggplot2)
 library(viridis)
@@ -663,10 +666,6 @@ annotation_cond <- data.frame(
 
 rownames(annotation_cond) <- cond_id
 
-# Specify the color of the annotation bar
-# color_by_condition <- c("#ccebc5","#b3cde3","#fbb4ae")
-# color_by_celltype <- rainbow(K_opt)
-
 names(color_by_celltype) <- celltype_name
 
 cond_colors = list(Condition = color_by_condition,
@@ -907,14 +906,3 @@ ggplot(df_marker, aes(x = DIFseq_type, y = Condition)) +
   )
 dev.off()
 
-######################################################################
-# Draw the violin plot of cell-type-specific DE genes for Beta cells #
-######################################################################
-# celltype_name <- c("Alpha", "Beta", "Delta&Gamma", "Acinar", "Ductal", "Others")
-k <- 2
-Intrinsic_beta <- gene_list[E_ordered[,k]==1]
-plots_DIFseqMarker <- VlnPlot(pancreas_DIFseq_obj, 
-                              features = Intrinsic_beta, 
-                              split.by = "Disease", group.by = "CellType",
-                              pt.size = 0, combine = FALSE)
-wrap_plots(plots = plots_DIFseqMarker, ncol = 2)

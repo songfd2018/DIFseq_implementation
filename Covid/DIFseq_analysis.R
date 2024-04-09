@@ -1,5 +1,8 @@
+##########################################
+# Analyze the Covid-19 dataset by DIFseq #
+##########################################
 rm(list=ls())
-# Analyze the Covid-19 dataset by DIFseq
+
 library(pheatmap)
 library(ggplot2)
 library(viridis)

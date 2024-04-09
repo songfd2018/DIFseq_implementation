@@ -1,5 +1,4 @@
 rm(list=ls())
-# heatmap.3 referring https://raw.githubusercontent.com/obigriffith/biostar-tutorials/master/Heatmaps/heatmap.3.R
 library(mclust)
 library(ggplot2)
 library(edgeR)
