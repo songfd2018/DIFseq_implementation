@@ -10,13 +10,13 @@ This repository introduces how to reproduce the results in our manuscript. First
 
 ## Compiling the source code
 
-The algorithm relies on GNU scietific library. To compile the source code on your computer, please modify the directory of GSL in the *Makefile* file. Then, you can compile the C++ source code by
+The algorithm relies on the GNU scientific library. To compile the source code on your computer, please modify the GSL directory in the *Makefile* file. Then, you can compile the C++ source code by
 
 ```
 make
 ```
 
-We apply [OMPRNG](https://homepage.divms.uiowa.edu/~mbognar/omprng/) to generate random number in parallel.
+We apply [OMPRNG](https://homepage.divms.uiowa.edu/~mbognar/omprng/) to generate random numbers in parallel.
 
 
 ## Simulation
