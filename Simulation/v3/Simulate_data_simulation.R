@@ -13,7 +13,7 @@ library(mclust)
 library(cluster)
 library(edgeR)
 library(tidyr)
-
+library(factoextra)
 
 proj <- "simulation"
 ver <- 3
