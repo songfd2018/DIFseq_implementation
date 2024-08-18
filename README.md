@@ -23,9 +23,9 @@ We apply [OMPRNG](https://homepage.divms.uiowa.edu/~mbognar/omprng/) to generate
 
 Our manuscript includes three simulation settings, including
 
-   - Setting 1: Assume that no batch effect exists between different batches and the cell-size factors of all cells are the same as if the batch effects correction and cell-wise normalization were perfect. 
-   - Setting 2: Incorporate batch effects and allow different cell-size factors
-   Setting 3: In the first two settings, all conditions exist in all batches. Setting 3 allows a flexible experimental design in which some conditions are missing in some batches.
+   - Setting 1: Assume that no batch effect exists between different batches and the cell-size factors of all cells are the same as if the batch effects correction and cell-wise normalization were perfect;
+   - Setting 2: Incorporate batch effects and allow different cell-size factors;
+   - Setting 3: In the first two settings, all conditions exist in all batches. Setting 3 allows a flexible experimental design in which some conditions are missing in some batches.
 
 Folder `vX` contains the reproduction code of setting `X`, where `X` takes the values of 1, 2 and 3 corresponding to three different settings. 
 
